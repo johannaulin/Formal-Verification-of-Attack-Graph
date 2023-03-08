@@ -24,7 +24,7 @@ class RunAlgorithm(Thread):
     	
     	subprocess.call("./exc " + self.attackpath + " " + self.countermeasures + " " + self.graphmodel, shell=True)
     	
-    	output = subprocess.run("./mcmas -a ISPL_file.ispl", shell=True, stdout=PIPE)
+    	output = subprocess.run("./mcmas -a ISPL_file.ispl", shell=True, stdout=PIPE, cwd="MCMAS/")
     	#print("".join([x for x in output.stdout.decode().split("\n") if "Formula number" in x]))
     	
     	ret = [x for x in output.stdout.decode().split("\n") if "Formula number" in x]
