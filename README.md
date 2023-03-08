@@ -24,7 +24,7 @@ Tool
 
 # To Execute
 * You need to have access to three files, a file containing the MulVAL generated attack graph (specifications found in Report 1), a file containing the input for mulval (specifications found at https://people.cs.ksu.edu/~xou/publications/mulval_sec05.pdf) and the file containing the countermeasures for the attacker (specifications found in Report 1).
-* 
+* To run the code, the first time you need to run `chmod +x user_interface.py` and then you can run `./user_interface.py` after and follow the instructions on the screen. 
 
 # Documentation
 -- LINK REPORTS
